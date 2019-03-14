@@ -22,7 +22,7 @@ if (!defined('PHP_MAJOR_VERSION') || PHP_MAJOR_VERSION < 7) {
 }
 
 // Detect deploy.php script
-$options = getopt('f::', ['file::']);
+$options = getopt('f:', ['file:']);
 $userSpecifiedFile = null;
 
 if (isset($options['f'])) {
